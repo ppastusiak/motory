@@ -1,0 +1,96 @@
+:root{
+    --kolor1: rgba(60, 120, 160,0.9);
+    --kolor2: rgba(0,100,0,0.6);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+
+
+.blk-1 {
+    background-color: var(--kolor1);
+    font-size: 150%;
+    color: white;
+    padding: 10px;
+    grid-column: 1/-1;
+}
+
+.blk-2 {
+    background-color: var(--kolor2);
+    height: 600px;
+   margin: 2%;
+   font-size: 120%;
+   overflow: auto;
+   box-shadow: 10px 10px 7px dimgray;
+   grid-row: 2/4;
+}
+
+.blk-3 {
+    background-color: var(--kolor2);
+    height: 300px;
+    width:50%;
+    justify-self: center;
+    margin: 1%;
+    box-shadow: 10px 10px 7px dimgray;
+    align-self: center;
+}
+
+.blk-4 {
+    background-color: var(--kolor2);
+    height: 300px;
+    width:50%;
+    justify-self: center;
+    margin: 1%;
+    align-self: center;
+    box-shadow: 10px 10px 7px dimgray;
+}
+
+.blk-5 {
+    background-color: var(--kolor1);
+    color: white;
+    padding:1%;
+    grid-column: 1/-1;
+}
+
+h1,h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+dt,dd {
+    color: white;
+    padding: 1%;
+}
+
+dd:hover{
+    background-color: lightgreen;
+}
+
+.image {
+    position: absolute;
+    width: 80%;    
+    left: 15%;
+    z-index: 0;
+}
+
+.image img {
+    width: 75%;
+}
+
+
+.grid-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.page {
+    width:75vw;
+    margin: 0 auto;
+}

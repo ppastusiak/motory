@@ -1,0 +1,93 @@
+:root{
+    --kolor1: rgba(60, 120, 160,0.9);
+    --kolor2: rgba(0,100,0,0.6);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.page {
+    width:70%;
+    position: absolute;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction:  column;
+    left: 0;
+    top:0;
+    z-index:1;
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    z-index: 0;
+}
+
+.header {
+    background-color: var(--kolor1);
+    font-size: 150%;
+    color: white;
+    padding: 10px;
+}
+
+.left {
+   background-color: var(--kolor2);
+   margin: 2%;
+   width: 75%; 
+   height: 600px;
+   font-size: 120%;
+   overflow: auto;
+   box-shadow: 10px 10px 7px dimgray;
+}
+
+
+.wrapper-center {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.footer {
+    background-color: var(--kolor1);
+    color: white;
+    padding:1%;
+
+}
+
+.right-top {
+    background-color: var(--kolor2);
+    height: 300px;
+    box-shadow: 10px 10px 7px dimgray;
+    margin: 10%;
+    width: 125%;
+    padding:2px;
+}
+
+.right-bottom {
+    background-color: var(--kolor2);
+    height: 300px;
+    box-shadow: 10px 10px 7px dimgray;
+    margin: 10%;
+    width: 125%;
+    padding:2px;
+}
+
+h1,h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+dt,dd {
+    color: white;
+    padding: 1%;
+}
+
+dd:hover{
+    background-color: lightgreen;
+}

@@ -1,0 +1,7 @@
+SELECT * FROM wycieczki WHERE poczatek LIKE "Muszyna" OR  poczatek LIKE "Wieliczka";
+
+SELECT nazwa,opis,poczatek,zdjecia.zrodlo FROM wycieczki LEFT JOIN zdjecia ON wycieczki.zdjecia_id=zdjecia.id;
+
+SELECT COUNT(*) AS Liczba FROM wycieczki;
+
+ALTER TABLE wycieczki ADD ocena INT NOT NULL AFTER koniec;
